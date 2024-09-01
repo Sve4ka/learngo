@@ -3,8 +3,8 @@ package user
 import (
 	"context"
 	"github.com/jmoiron/sqlx"
-	"golearn/internal/models"
-	"golearn/internal/repository"
+	"learngo/internal/models"
+	"learngo/internal/repository"
 )
 
 type RepoUser struct {
@@ -17,21 +17,21 @@ func (repo RepoUser) Create(ctx context.Context, user models.UserCreate) (int, e
 	if err != nil {
 		return 0, err
 	}
-	row := transaction.QueryRowContext(ctx, `INSERT INTO users (phone, name, hashed_password) VALUES ($1, $2, $3) returning id;`,
-		user.Name, user.SurName, create.Password)
+	row := transaction.QueryRowContext(ctx, `INSERT INTO users (name, sur_name, email, hashed_password) VALUES ($1, $2, $3, $4) returning id;`,
+		user.Name, user.SurName, user.Email, user.PWD)
 
 	err = row.Scan(&id)
 	if err != nil {
 		if rbErr := transaction.Rollback(); rbErr != nil {
-			return 0, cerr.Err(cerr.User, cerr.Repository, cerr.Rollback, rbErr).Error()
+			return 0, rbErr
 		}
-		return 0, cerr.Err(cerr.User, cerr.Repository, cerr.Scan, err).Error()
+		return 0, err
 	}
 	if err := transaction.Commit(); err != nil {
 		if rbErr := transaction.Rollback(); rbErr != nil {
-			return 0, cerr.Err(cerr.User, cerr.Repository, cerr.Rollback, rbErr).Error()
+			return 0, rbErr
 		}
-		return 0, cerr.Err(cerr.User, cerr.Repository, cerr.Commit, err).Error()
+		return 0, err
 	}
 	return id, nil
 }

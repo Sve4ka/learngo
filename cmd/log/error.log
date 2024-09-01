@@ -1,0 +1,1 @@
+{"level":"error","time":"2024-08-30T16:52:53Z","caller":"C:/Users/User/GolandProjects/learngo/pkg/log/log.go:19","message":"pq: повторяющееся значение ключа нарушает ограничение уникальности \"users_email_key\""}

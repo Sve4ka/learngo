@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"golearn/internal/models"
+	"learngo/internal/models"
 )
 
 type UserRepo interface {
