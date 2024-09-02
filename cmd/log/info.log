@@ -14,3 +14,16 @@
 {"level":"info","time":"2024-08-30T16:59:08Z","caller":"C:/Users/User/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
 {"level":"info","time":"2024-08-30T17:01:26Z","caller":"C:/Users/User/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
 {"level":"info","time":"2024-08-30T17:01:26Z","caller":"C:/Users/User/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
+{"level":"info","time":"2024-09-02T18:29:06Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:32:42Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:34:05Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:34:06Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
+{"level":"info","time":"2024-09-02T18:36:32Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:36:32Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
+{"level":"info","time":"2024-09-02T18:37:32Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:37:32Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
+{"level":"info","time":"2024-09-02T18:41:58Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T18:41:58Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
+{"level":"info","time":"2024-09-02T18:51:34Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"create user 1"}
+{"level":"info","time":"2024-09-02T23:02:58Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Config initialized"}
+{"level":"info","time":"2024-09-02T23:02:58Z","caller":"C:/Users/aria_/GolandProjects/learngo/pkg/log/log.go:15","message":"Database initialized"}
